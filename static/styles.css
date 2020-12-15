@@ -1,0 +1,18 @@
+@import "reset.css";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+  margin: 0px;
+  padding: 20px;
+}
+
+.header-menu__text-first {
+  margin-right: 20px;
+}
+
+.header-menu__text-second {
+  margin-right: 20px;
+}

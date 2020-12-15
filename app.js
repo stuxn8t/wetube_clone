@@ -1,13 +1,16 @@
 import { join } from "path";
 import express from "express";
 import morgan from "morgan";
-import userRouter from "./routers/userRouter";
+import routes from "./routes";
+import homeRouter from "./routers/homeRouter";
 
 const app = express();
 
 app.set("view engine", "pug");
-app.set("views", join(__dirname, "./views"));
+app.set("views", join(__dirname, "/views"));
 
-app.use("/", userRouter);
+app.use(express.static(__dirname + "/static"));
+
+app.use(routes.home, homeRouter);
 
 export default app;

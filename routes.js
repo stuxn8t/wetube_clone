@@ -1,3 +1,5 @@
+import app from "./app";
+
 const HOME = "/";
 
 const routes = {
